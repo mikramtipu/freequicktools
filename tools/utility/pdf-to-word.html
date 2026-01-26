@@ -3,35 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF/Image to Word Converter - QuickToolsHub</title>
+    <title>Tool Name - QuickToolsHub</title>
+    <meta name="description" content="Tool description for SEO">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
-        
-        .urdu-text {
-            font-family: 'Noto+Nastaliq+Urdu', 'Jameel Noori Nastaleeq', Arial, sans-serif;
-            text-align: right;
-            line-height: 2.5;
-        }
-        
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
@@ -64,472 +39,421 @@
             </div>
         </div>
     </header>
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-tools text-white text-xl"></i>
-                    </div>
-                    <div>
-                        <h1 class="font-bold text-xl text-gray-800">QuickToolsHub</h1>
-                        <p class="text-xs text-gray-500">100+ Free Tools</p>
-                    </div>
-                </a>
-                <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">
-                    <i class="fas fa-arrow-left mr-2"></i>Back to Home
-                </a>
-            </div>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-	<!-- TOOL DESCRIPTION -->
-<section class="bg-white rounded-xl shadow p-6 mb-6">
-  <h1 class="text-3xl font-bold mb-3">
-    PDF to Word Converter (Urdu & English)
-  </h1>
-  <p class="text-gray-700 leading-7">
-    Yeh free online tool PDF aur images ko editable Microsoft Word file
-    mein convert karta hai. Is tool mein Urdu aur English OCR support
-    maujood hai aur koi software install karne ki zarurat nahi.
-  </p>
-</section>
-
-    <div class="container mx-auto px-4 py-8 max-w-6xl">
-        <!-- Hero Section -->
-        <div class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-2xl p-8 mb-8 text-center">
-            <h1 class="text-4xl font-bold mb-3">
-                <i class="fas fa-file-word mr-3"></i>PDF/Image to Word Converter
-            </h1>
-            <p class="text-xl mb-2">English & Urdu - Direct Word Document mein convert karein!</p>
-            <p class="text-sm opacity-90">انگلش اور اردو دونوں زبانوں کے لیے</p>
-        </div>
-
-        <!-- Upload Section -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
-            <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
-                <i class="fas fa-cloud-upload-alt mr-2 text-blue-600"></i>Upload Method Choose Karein
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Method 1: File Upload -->
-                <div class="border-2 border-gray-200 rounded-xl p-6 hover:border-blue-500 hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold text-blue-600 mb-4">
-                        <i class="fas fa-folder-open mr-2"></i>Method 1: Upload File
-                    </h3>
-                    <label for="fileInput" class="block">
-                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 rounded-lg cursor-pointer hover:shadow-xl transition text-center font-bold">
-                            <i class="fas fa-upload mr-2"></i>Select File
-                        </div>
-                    </label>
-                    <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg" class="hidden">
-                    <p class="text-sm text-gray-500 mt-3 text-center">PDF, PNG, JPG, JPEG supported</p>
-                </div>
-                
-                <!-- Method 2: Paste -->
-                <div class="border-2 border-gray-200 rounded-xl p-6 hover:border-green-500 hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold text-green-600 mb-4">
-                        <i class="fas fa-clipboard mr-2"></i>Method 2: Paste (Ctrl+V)
-                    </h3>
-                    <div class="bg-gradient-to-br from-green-50 to-green-100 border-2 border-dashed border-green-400 rounded-lg p-8 text-center min-h-[120px] flex items-center justify-center">
-                        <div>
-                            <i class="fas fa-keyboard text-4xl text-green-600 mb-2"></i>
-                            <p class="text-green-700 font-bold">Is page par kahin bhi<br>Ctrl+V press karein</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tips Section -->
-            <div class="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-6 mt-6">
-                <h4 class="font-bold text-yellow-800 mb-3 flex items-center">
-                    <i class="fas fa-lightbulb mr-2 text-yellow-600"></i>Quick Tips:
-                </h4>
-                <ul class="space-y-2 text-sm text-yellow-900">
-                    <li><strong>💡 Screenshot:</strong> Lene ke baad directly Ctrl+V press kar dein!</li>
-                    <li><strong>🌍 Language Support:</strong> English + Urdu (اردو) دونوں supported ہیں</li>
-                    <li><strong>📸 Urdu Ke Liye:</strong> Clear aur high resolution image use karein</li>
-                    <li><strong>✨ Formatting:</strong> PDF ki original formatting maintain hogi - line breaks aur paragraphs bilkul waise hi!</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- File Info -->
-        <div id="fileInfo" class="hidden bg-blue-50 border-2 border-blue-300 rounded-xl p-4 mb-6">
-            <p class="text-blue-900 font-semibold">
-                <i class="fas fa-file mr-2"></i>File: <span id="fileName"></span>
-            </p>
-        </div>
-
-        <!-- Processing Section -->
-        <div id="processing" class="hidden bg-white rounded-2xl shadow-lg p-8 mb-8 text-center">
-            <div class="spinner mb-4"></div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-2">
-                <i class="fas fa-cog fa-spin mr-2 text-blue-600"></i>Processing...
-            </h3>
-            <p class="text-gray-600 mb-4">Text extract ho raha hai, please wait...</p>
-            <div class="bg-gray-200 h-8 rounded-full overflow-hidden">
-                <div id="progressFill" class="bg-gradient-to-r from-blue-600 to-purple-600 h-full flex items-center justify-center text-white font-bold transition-all duration-300" style="width: 0%">
-                    0%
-                </div>
-            </div>
-        </div>
-
-        <!-- Results Section -->
-        <div id="results" class="hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <!-- Preview Box -->
-                <div class="bg-white rounded-2xl shadow-lg p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">
-                        <i class="fas fa-image mr-2 text-purple-600"></i>Original Image/PDF
-                    </h3>
-                    <div class="border-2 border-gray-200 rounded-lg overflow-hidden">
-                        <img id="previewImg" class="w-full h-auto max-h-96 object-contain" alt="Preview">
-                    </div>
-                </div>
-
-                <!-- Text Box -->
-                <div class="bg-white rounded-2xl shadow-lg p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">
-                        <i class="fas fa-font mr-2 text-green-600"></i>Extracted Text
-                    </h3>
-                    <textarea id="extractedText" class="w-full h-96 p-4 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none urdu-text resize-none" placeholder="Extracted text will appear here..."></textarea>
-                    
-                    <!-- Action Buttons -->
-                    <div class="space-y-3 mt-4">
-                        <button onclick="downloadWordDoc()" class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-4 px-6 rounded-lg font-bold text-lg hover:shadow-xl transition">
-                            <i class="fas fa-file-word mr-2"></i>Download Word Document (.doc)
-                        </button>
-                        <button onclick="copyText()" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg font-bold hover:shadow-xl transition">
-                            <i class="fas fa-copy mr-2"></i>Copy Text
-                        </button>
-                    </div>
-
-                    <div class="bg-green-50 border border-green-300 rounded-lg p-3 mt-4 text-center text-sm">
-                        <p class="text-green-800">
-                            <i class="fas fa-check-circle mr-1"></i>
-                            Word Document button se proper .doc file download hogi jo Microsoft Word mein khulegi
-                        </p>
-                        <p class="text-green-800 mt-1">
-                            <i class="fas fa-bullseye mr-1"></i>
-                            Original PDF ki formatting maintain rahegi!
-                        </p>
-                    </div>
-                </div>
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="../../index.html" class="hover:text-blue-600"><i class="fas fa-home mr-1"></i>Home</a>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <a href="../../index.html#tools" class="hover:text-blue-600">Tools</a>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <span id="categoryName" class="text-gray-800 font-medium">Category</span>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <span id="toolName" class="text-gray-800 font-medium">PDF TO WORD</span>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="mb-2">
-                <i class="fas fa-tools mr-2"></i>QuickToolsHub - Free Online Tools
-            </p>
-            <p class="text-sm text-gray-400">© 2025 QuickToolsHub. All rights reserved.</p>
+    <!-- Tool Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm mb-4">
+                    <i id="toolIcon" class="fas fa-robot mr-2"></i>
+                    <span id="toolCategory">AI Tools</span>
+                </div>
+                <h1 id="mainToolTitle" class="text-4xl md:text-5xl font-bold mb-4">PDF TO WORD</h1>
+                <p id="toolDescription" class="text-xl opacity-90 mb-6">PDF to Word Converter (Urdu & English)
+Yeh free online tool PDF aur images ko editable Microsoft Word file mein convert karta hai. Is tool mein Urdu aur English OCR support maujood hai aur koi software install karne ki zarurat nahi.</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm">
+                    <span class="bg-white/20 px-4 py-2 rounded-full"><i class="fas fa-bolt mr-2"></i>Fast</span>
+                    <span class="bg-white/20 px-4 py-2 rounded-full"><i class="fas fa-gift mr-2"></i>Free</span>
+                    <span class="bg-white/20 px-4 py-2 rounded-full"><i class="fas fa-lock mr-2"></i>Secure</span>
+                </div>
+            </div>
         </div>
-		<!-- DETAILED DESCRIPTION -->
-<section class="bg-white rounded-xl shadow p-6 mt-10">
-  <h2 class="text-2xl font-semibold mb-4">
-    About PDF to Word Converter
-  </h2>
+    </section>
 
-  <p class="text-gray-700 leading-7 mb-4">
-    QuickToolsHub ka PDF to Word Converter aik advanced OCR based tool hai
-    jo scanned PDFs aur images se text nikaal kar editable Word document
-    banata hai. Yeh tool students, teachers, freelancers aur office users
-    ke liye bohat useful hai.
-  </p>
+    <!-- Tool Interface -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <!-- Tool content will be inserted here -->
+                    <div id="toolInterface">
+                        <!-- Example Interface -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    <i class="fas fa-keyboard mr-2"></i>Input
+                                </label>
+                                <textarea id="inputText" rows="8" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none resize-none" placeholder="Enter your text here..."></textarea>
+                                <div class="flex justify-between items-center mt-2 text-sm text-gray-500">
+                                    <span id="charCount">0 characters</span>
+                                    <button onclick="clearInput()" class="text-red-500 hover:text-red-600">
+                                        <i class="fas fa-trash mr-1"></i>Clear
+                                    </button>
+                                </div>
+                            </div>
 
-  <p class="text-gray-700 leading-7 mb-4">
-    Is tool ke zariye aap PDF, JPG, PNG aur JPEG files ko easily Word
-    format mein convert kar sakte hain. Tool original text layout ko
-    maximum had tak preserve karta hai.
-  </p>
+                            <div class="flex gap-3">
+                                <button onclick="processTool()" class="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition">
+                                    <i class="fas fa-magic mr-2"></i>Generate Result
+                                </button>
+                                <button onclick="copyResult()" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
 
-  <h3 class="text-xl font-semibold mb-3">Key Features</h3>
-  <ul class="list-disc pl-6 text-gray-700 space-y-2">
-    <li>Free PDF to Word conversion</li>
-    <li>Urdu & English OCR support</li>
-    <li>No signup required</li>
-    <li>Browser based & secure</li>
-  </ul>
-</section>
+                            <div id="resultSection" class="hidden">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    <i class="fas fa-check-circle text-green-600 mr-2"></i>Result
+                                </label>
+                                <div id="outputText" class="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg min-h-[200px]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- How to Use -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mt-6">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        How to Use This Tool?
+                    </h2>
+                    <ol class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">1</span>
+                            <span>Enter your text in the input box above</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">2</span>
+                            <span>Click the "Generate Result" button</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">3</span>
+                            <span>View and copy your results instantly</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Features -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mt-6">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-star text-yellow-500 mr-3"></i>
+                        Key Features
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-blue-100 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bolt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Lightning Fast</h3>
+                                <p class="text-sm text-gray-600">Get instant results in seconds</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-green-100 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-gift text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">100% Free</h3>
+                                <p class="text-sm text-gray-600">No sign-up or payment required</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-purple-100 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-lock text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Secure & Private</h3>
+                                <p class="text-sm text-gray-600">Your data stays on your device</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-yellow-100 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-mobile-alt text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Mobile Friendly</h3>
+                                <p class="text-sm text-gray-600">Works on all devices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <i class="fas fa-tools text-blue-600 mr-3"></i>
+                    Related Tools
+                </h2>
+                <div id="relatedTools" class="grid md:grid-cols-3 gap-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Tools Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">
+                    <i class="fas fa-th-large text-blue-600 mr-3"></i>
+                    Browse All Tools by Category
+                </h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="allToolsCategories">
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+                <div>
+                    <h3 class="font-bold mb-3"><i class="fas fa-tools mr-2"></i>QuickToolsHub</h3>
+                    <p class="text-gray-400 text-xs">Free tools for everyone</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Quick Links</h4>
+                    <ul class="space-y-1 text-gray-400 text-xs">
+                        <li><a href="../../blog.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="../../about.html" class="hover:text-white">About</a></li>
+                        <li><a href="../../contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Categories</h4>
+                    <ul class="space-y-1 text-gray-400 text-xs">
+                        <li><a href="../../index.html#tools" class="hover:text-white">AI Tools</a></li>
+                        <li><a href="../../index.html#tools" class="hover:text-white">SEO Tools</a></li>
+                        <li><a href="../../index.html#tools" class="hover:text-white">Student Tools</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Connect</h4>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-xs text-gray-400">
+                <p>© 2025 QuickToolsHub. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script>
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-        
-        let currentText = '';
-        let structuredContent = [];
-        
-        // File Input Handler
-        document.getElementById('fileInput').addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                processFile(file, file.name);
+        // All tools data structure
+        const allTools = {
+            ai: {
+                name: 'AI Tools',
+                icon: 'fa-robot',
+                color: 'purple',
+                tools: [
+                    'AI Content Writer', 'AI Paraphraser', 'AI Grammar Checker', 'AI Summarizer',
+                    'AI Essay Writer', 'AI Email Generator', 'AI Story Generator', 'AI Resume Builder',
+                    'AI Chatbot', 'AI Blog Post Generator', 'AI Product Description', 'AI Headline Generator',
+                    'AI Code Generator', 'AI Translator', 'AI Text Improver', 'AI Video Script Writer',
+                    'AI Cover Letter Generator', 'AI Article Rewriter'
+                ]
+            },
+            seo: {
+                name: 'SEO Tools',
+                icon: 'fa-chart-line',
+                color: 'green',
+                tools: [
+                    'Keyword Density Checker', 'Meta Title Generator', 'Meta Description Generator',
+                    'Word Counter', 'Plagiarism Checker', 'Keyword Research Tool', 'Backlink Checker',
+                    'Domain Authority Checker', 'XML Sitemap Generator', 'Robots.txt Generator',
+                    'SEO Score Checker', 'Redirect Checker'
+                ]
+            },
+            social: {
+                name: 'Social Media',
+                icon: 'fa-youtube',
+                color: 'red',
+                tools: [
+                    'YouTube Title Generator', 'YouTube Description Generator', 'Instagram Caption Generator',
+                    'YouTube Hashtag Generator', 'TikTok Caption Generator', 'Twitter Thread Generator',
+                    'Facebook Post Generator', 'LinkedIn Post Generator', 'Pinterest Description Generator',
+                    'Social Media Bio Generator', 'YouTube Tag Generator', 'Instagram Reel Ideas Generator'
+                ]
+            },
+            student: {
+                name: 'Student Tools',
+                icon: 'fa-graduation-cap',
+                color: 'blue',
+                tools: [
+                    'GPA Calculator', 'Percentage Calculator', 'Scientific Calculator', 'Age Calculator',
+                    'BMI Calculator', 'Currency Converter', 'Unit Converter', 'Random Number Generator',
+                    'Essay Grader', 'Citation Generator', 'Grade Calculator', 'Time Zone Converter'
+                ]
+            },
+            utility: {
+                name: 'Utility Tools',
+                icon: 'fa-wrench',
+                color: 'orange',
+                tools: [
+                    'PDF to Word Converter', 'Image Compressor', 'QR Code Generator', 'Password Generator',
+                    'Base64 Encoder/Decoder', 'JSON Formatter', 'URL Shortener', 'Color Picker',
+                    'Lorem Ipsum Generator', 'Markdown Editor', 'Case Converter', 'Text to Speech',
+                    'Speech to Text', 'Reverse Text Generator', 'Remove Line Breaks'
+                ]
+            },
+            earning: {
+                name: 'Earning Tools',
+                icon: 'fa-dollar-sign',
+                color: 'green',
+                tools: [
+                    'AdSense Revenue Calculator', 'YouTube Earning Calculator', 'Invoice Generator',
+                    'Freelance Rate Calculator', 'ROI Calculator', 'Salary Calculator',
+                    'Tax Calculator', 'Crypto Profit Calculator'
+                ]
+            },
+            design: {
+                name: 'Design Tools',
+                icon: 'fa-palette',
+                color: 'pink',
+                tools: [
+                    'Background Remover', 'Image Resizer', 'Thumbnail Maker', 'Logo Maker',
+                    'Meme Generator', 'Screenshot Tool', 'Favicon Generator', 'Watermark Tool'
+                ]
+            },
+            webdev: {
+                name: 'Web Dev Tools',
+                icon: 'fa-code',
+                color: 'indigo',
+                tools: [
+                    'Website Speed Test', 'HTML Minifier', 'CSS Minifier', 'JavaScript Minifier',
+                    'Responsive Design Checker', 'Meta Tag Generator', 'Open Graph Generator'
+                ]
             }
+        };
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
         });
-        
-        // Paste Handler
-        window.addEventListener('paste', function(e) {
-            const items = e.clipboardData.items;
-            for (let i = 0; i < items.length; i++) {
-                if (items[i].type.indexOf('image') !== -1) {
-                    e.preventDefault();
-                    const blob = items[i].getAsFile();
-                    processFile(blob, 'Pasted Image - ' + new Date().toLocaleTimeString());
-                    return;
-                }
-            }
-        });
-        
-        async function processFile(file, fileName) {
-            document.getElementById('fileName').textContent = fileName;
-            document.getElementById('fileInfo').classList.remove('hidden');
-            document.getElementById('processing').classList.remove('hidden');
-            document.getElementById('results').classList.add('hidden');
-            
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                document.getElementById('previewImg').src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-            
-            try {
-                let text = '';
-                
-                if (file.type === 'application/pdf') {
-                    text = await extractFromPDF(file);
-                } else if (file.type.startsWith('image/')) {
-                    text = await extractFromImage(file);
-                }
-                
-                currentText = text;
-                document.getElementById('extractedText').value = text;
-                document.getElementById('processing').classList.add('hidden');
-                document.getElementById('results').classList.remove('hidden');
-                
-                window.scrollTo({ top: document.getElementById('results').offsetTop - 100, behavior: 'smooth' });
-                
-            } catch (error) {
-                alert('❌ Error: ' + error.message);
-                document.getElementById('processing').classList.add('hidden');
-            }
-        }
-        
-        async function extractFromImage(file) {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-                const reader = new FileReader();
-                
-                reader.onload = function(e) {
-                    img.src = e.target.result;
-                    img.onload = async function() {
-                        try {
-                            const canvas = document.createElement('canvas');
-                            const ctx = canvas.getContext('2d');
-                            
-                            let width = img.width;
-                            let height = img.height;
-                            
-                            const maxWidth = 2000;
-                            
-                            if (width > maxWidth) {
-                                height = (height * maxWidth) / width;
-                                width = maxWidth;
-                            }
-                            
-                            canvas.width = width;
-                            canvas.height = height;
-                            
-                            ctx.filter = 'contrast(1.2) brightness(1.1)';
-                            ctx.drawImage(img, 0, 0, width, height);
-                            
-                            updateProgress(10);
-                            const resultUrdu = await Tesseract.recognize(
-                                canvas,
-                                'urd',
-                                {
-                                    logger: function(m) {
-                                        if (m.status === 'recognizing text') {
-                                            const progress = 10 + Math.round(m.progress * 40);
-                                            updateProgress(progress);
-                                        }
-                                    }
-                                }
-                            );
-                            
-                            updateProgress(50);
-                            const resultEng = await Tesseract.recognize(
-                                canvas,
-                                'eng',
-                                {
-                                    logger: function(m) {
-                                        if (m.status === 'recognizing text') {
-                                            const progress = 50 + Math.round(m.progress * 50);
-                                            updateProgress(progress);
-                                        }
-                                    }
-                                }
-                            );
-                            
-                            let finalText = '';
-                            if (resultUrdu.data.confidence > 40) {
-                                finalText = resultUrdu.data.text + '\n\n' + resultEng.data.text;
-                            } else {
-                                finalText = resultEng.data.text + '\n\n' + resultUrdu.data.text;
-                            }
-                            
-                            resolve(finalText);
-                        } catch (error) {
-                            reject(error);
-                        }
-                    };
-                };
-                
-                reader.readAsDataURL(file);
+
+        // Character counter
+        const input = document.getElementById('inputText');
+        if (input) {
+            input.addEventListener('input', function() {
+                document.getElementById('charCount').textContent = this.value.length + ' characters';
             });
         }
-        
-        async function extractFromPDF(file) {
-            const arrayBuffer = await file.arrayBuffer();
-            const pdf = await pdfjsLib.getDocument({data: arrayBuffer}).promise;
-            structuredContent = [];
-            
-            for (let i = 1; i <= pdf.numPages; i++) {
-                const page = await pdf.getPage(i);
-                const textContent = await page.getTextContent();
-                
-                const lines = {};
-                
-                textContent.items.forEach(item => {
-                    const y = Math.round(item.transform[5]);
-                    if (!lines[y]) {
-                        lines[y] = [];
-                    }
-                    lines[y].push({
-                        text: item.str,
-                        x: item.transform[4],
-                        height: item.height
-                    });
-                });
-                
-                const sortedYPositions = Object.keys(lines).sort((a, b) => b - a);
-                
-                let pageText = [];
-                let lastY = null;
-                let lastHeight = null;
-                
-                sortedYPositions.forEach(y => {
-                    lines[y].sort((a, b) => a.x - b.x);
-                    
-                    const lineText = lines[y].map(item => item.text).join(' ').trim();
-                    
-                    if (lineText) {
-                        if (lastY !== null) {
-                            const verticalGap = lastY - y;
-                            const avgHeight = lastHeight || 12;
-                            
-                            if (verticalGap > avgHeight * 1.5) {
-                                pageText.push('');
-                            }
-                        }
-                        
-                        pageText.push(lineText);
-                        lastY = y;
-                        lastHeight = lines[y][0].height;
-                    }
-                });
-                
-                if (i > 1) {
-                    structuredContent.push('');
-                    structuredContent.push('--- Page ' + i + ' ---');
-                    structuredContent.push('');
-                }
-                structuredContent = structuredContent.concat(pageText);
-                
-                const progress = Math.round((i / pdf.numPages) * 100);
-                updateProgress(progress);
+
+        // Clear input
+        function clearInput() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('charCount').textContent = '0 characters';
+            document.getElementById('resultSection').classList.add('hidden');
+        }
+
+        // Process tool (example function)
+        function processTool() {
+            const input = document.getElementById('inputText').value;
+            if (!input.trim()) {
+                alert('Please enter some text!');
+                return;
             }
             
-            return structuredContent.join('\n');
-        }
-        
-        function updateProgress(percent) {
-            const fill = document.getElementById('progressFill');
-            fill.style.width = percent + '%';
-            fill.textContent = percent + '%';
-        }
-        
-        function copyText() {
-            const text = document.getElementById('extractedText').value;
-            navigator.clipboard.writeText(text).then(function() {
-                alert('✅ Text copied successfully!\n\nAb Word mein Ctrl+V press karein.');
-            });
-        }
-        
-        function downloadWordDoc() {
-            const text = document.getElementById('extractedText').value;
+            // Show result section
+            document.getElementById('resultSection').classList.remove('hidden');
             
-            const lines = text.split('\n');
-            let htmlParagraphs = '';
+            // Example processing - replace with actual tool logic
+            document.getElementById('outputText').textContent = 'Processing: ' + input;
             
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i].trim();
-                
-                if (line === '') {
-                    htmlParagraphs += '<p style="margin: 0; line-height: 1.5;">&nbsp;</p>\n';
-                } else if (line.startsWith('---')) {
-                    htmlParagraphs += '<p style="page-break-before: always; margin: 0;">&nbsp;</p>\n';
-                    htmlParagraphs += `<p style="text-align: center; color: #666; margin: 10pt 0;"><strong>${line}</strong></p>\n`;
-                } else {
-                    htmlParagraphs += `<p style="margin: 0; line-height: 1.5;">${line}</p>\n`;
-                }
+            // Smooth scroll to result
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Copy result
+        function copyResult() {
+            const result = document.getElementById('outputText').textContent;
+            if (!result || result === '') {
+                alert('No result to copy!');
+                return;
             }
             
-            const htmlContent = `
-<html xmlns:o='urn:schemas-microsoft-com:office:office' 
-      xmlns:w='urn:schemas-microsoft-com:office:word' 
-      xmlns='http://www.w3.org/TR/REC-html40'>
-<head>
-    <meta charset='utf-8'>
-    <title>Extracted Text</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 12pt;
-            margin: 1in;
-        }
-        p {
-            margin: 0;
-            line-height: 1.5;
-        }
-    </style>
-</head>
-<body>
-${htmlParagraphs}
-</body>
-</html>`;
-            
-            const blob = new Blob(['\ufeff', htmlContent], {
-                type: 'application/msword'
+            navigator.clipboard.writeText(result).then(() => {
+                const btn = event.target.closest('button');
+                const original = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => btn.innerHTML = original, 2000);
             });
-            
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'extracted_text_' + Date.now() + '.doc';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
-            setTimeout(() => {
-                alert('✅ Word Document (.doc) download ho gaya!\n\n📄 Original formatting maintain ki gayi hai:\n- Line breaks preserved\n- Paragraphs properly arranged\n- Page breaks included\n\n📂 Ab Microsoft Word mein open kar sakte hain.');
-            }, 500);
         }
+
+        // Load all tools categories
+        function loadAllToolsCategories() {
+            const container = document.getElementById('allToolsCategories');
+            let html = '';
+            
+            for (const [key, data] of Object.entries(allTools)) {
+                html += `
+                    <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition cursor-pointer" onclick="showCategoryTools('${key}')">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-${data.color}-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                                <i class="fas ${data.icon} text-${data.color}-600 text-xl"></i>
+                            </div>
+                            <span class="bg-${data.color}-100 text-${data.color}-700 px-3 py-1 rounded-full text-sm font-bold">${data.tools.length}</span>
+                        </div>
+                        <h3 class="font-bold text-gray-800">${data.name}</h3>
+                        <p class="text-xs text-gray-500 mt-1">Click to view all tools</p>
+                    </div>
+                `;
+            }
+            
+            container.innerHTML = html;
+        }
+
+        // Show category tools in modal or expand
+        function showCategoryTools(category) {
+            const data = allTools[category];
+            const toolsList = data.tools.map(tool => `
+                <div class="bg-gray-50 p-3 rounded hover:bg-gray-100 transition">
+                    <i class="fas fa-check-circle text-${data.color}-600 mr-2"></i>${tool}
+                </div>
+            `).join('');
+            
+            // Create modal
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-2xl font-bold">
+                                <i class="fas ${data.icon} text-${data.color}-600 mr-2"></i>${data.name}
+                            </h2>
+                            <button onclick="this.closest('.fixed').remove()" class="text-gray-500 hover:text-gray-700 text-2xl">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="grid gap-2">
+                            ${toolsList}
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Initialize
+        loadAllToolsCategories();
     </script>
 </body>
 </html>
