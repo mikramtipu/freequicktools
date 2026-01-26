@@ -10,7 +10,7 @@
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+<header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="flex items-center space-x-3">
@@ -27,6 +27,9 @@
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium"><i class="fas fa-home mr-1"></i>Home</a>
                     <a href="#tools" class="text-gray-700 hover:text-blue-600 font-medium"><i class="fas fa-tools mr-1"></i>Tools</a>
                     <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium"><i class="fas fa-blog mr-1"></i>Blog</a>
+                    <a href="resources.html" class="text-gray-700 hover:text-blue-600 font-medium"><i class="fas fa-book mr-1"></i>Resources</a>
+                    <a href="tutorials.html" class="text-gray-700 hover:text-blue-600 font-medium"><i class="fas fa-chalkboard-teacher mr-1"></i>Tutorials</a>
+                    <a href="comparisons.html" class="text-gray-700 hover:text-blue-600 font-medium"><i class="fas fa-balance-scale mr-1"></i>Compare</a>
                     <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg"><i class="fas fa-envelope mr-1"></i>Contact</a>
                 </nav>
                 
@@ -37,6 +40,9 @@
                 <a href="#" class="block py-2"><i class="fas fa-home mr-2"></i>Home</a>
                 <a href="#tools" class="block py-2"><i class="fas fa-tools mr-2"></i>Tools</a>
                 <a href="blog.html" class="block py-2"><i class="fas fa-blog mr-2"></i>Blog</a>
+                <a href="resources.html" class="block py-2"><i class="fas fa-book mr-2"></i>Resources</a>
+                <a href="tutorials.html" class="block py-2"><i class="fas fa-chalkboard-teacher mr-2"></i>Tutorials</a>
+                <a href="comparisons.html" class="block py-2"><i class="fas fa-balance-scale mr-2"></i>Compare</a>
                 <a href="contact.html" class="block py-2"><i class="fas fa-envelope mr-2"></i>Contact</a>
             </div>
         </div>
@@ -58,7 +64,7 @@
     </section>
 
     <!-- Category Tabs -->
-    <section class="bg-white shadow-sm py-4 sticky top-20 z-40">
+ <section class="bg-white shadow-sm py-4 sticky top-20 z-40">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap gap-2 justify-center text-sm">
                 <button onclick="filterTools('all')" class="category-btn active px-4 py-2 rounded-lg font-medium"><i class="fas fa-home mr-1"></i>All</button>
@@ -72,7 +78,7 @@
                 <button onclick="filterTools('webdev')" class="category-btn px-4 py-2 rounded-lg font-medium"><i class="fas fa-code mr-1"></i>Web Dev</button>
             </div>
         </div>
-    </section>
+    </section>   
 
     <!-- Tools Grid -->
     <section id="tools" class="py-12">
@@ -82,39 +88,63 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
                 <div>
-                    <h3 class="font-bold mb-3"><i class="fas fa-tools mr-2"></i>QuickToolsHub</h3>
-                    <p class="text-gray-400 text-xs">Free tools for everyone</p>
+                    <h3 class="font-bold text-lg mb-4">
+                        <i class="fas fa-tools mr-2"></i>QuickToolsHub
+                    </h3>
+                    <p class="text-gray-400 text-sm">Free online tools for everyone. Fast, simple, and secure.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-3">Quick Links</h4>
-                    <ul class="space-y-1 text-gray-400 text-xs">
-                        <li><a href="blog.html" class="hover:text-white">Blog</a></li>
-                        <li><a href="about.html" class="hover:text-white">About</a></li>
-                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#tools" onclick="filterTools('ai')" class="hover:text-white transition"><i class="fas fa-robot mr-2"></i>AI Tools</a></li>
+                        <li><a href="#tools" onclick="filterTools('seo')" class="hover:text-white transition"><i class="fas fa-chart-line mr-2"></i>SEO Tools</a></li>
+                        <li><a href="#tools" onclick="filterTools('social')" class="hover:text-white transition"><i class="fab fa-youtube mr-2"></i>Social Media</a></li>
+                        <li><a href="#tools" onclick="filterTools('student')" class="hover:text-white transition"><i class="fas fa-graduation-cap mr-2"></i>Student Tools</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-3">Categories</h4>
-                    <ul class="space-y-1 text-gray-400 text-xs">
-                        <li><a href="#" onclick="filterTools('ai')" class="hover:text-white">AI Tools</a></li>
-                        <li><a href="#" onclick="filterTools('seo')" class="hover:text-white">SEO Tools</a></li>
-                        <li><a href="#" onclick="filterTools('student')" class="hover:text-white">Student Tools</a></li>
+                    <h4 class="font-bold mb-4">More Categories</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#tools" onclick="filterTools('utility')" class="hover:text-white transition"><i class="fas fa-wrench mr-2"></i>Utility Tools</a></li>
+                        <li><a href="#tools" onclick="filterTools('earning')" class="hover:text-white transition"><i class="fas fa-dollar-sign mr-2"></i>Earning Tools</a></li>
+                        <li><a href="#tools" onclick="filterTools('design')" class="hover:text-white transition"><i class="fas fa-palette mr-2"></i>Design Tools</a></li>
+                        <li><a href="#tools" onclick="filterTools('webdev')" class="hover:text-white transition"><i class="fas fa-code mr-2"></i>Web Dev Tools</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-3">Connect</h4>
-                    <div class="flex gap-3">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+                        <li><a href="tutorials.html" class="hover:text-white transition">Tutorials</a></li>
+                        <li><a href="comparisons.html" class="hover:text-white transition">Comparisons</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal & Connect</h4>
+                    <ul class="space-y-2 text-sm text-gray-400 mb-4">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-xs text-gray-400">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
                 <p>© 2025 QuickToolsHub. All rights reserved.</p>
             </div>
         </div>
@@ -122,7 +152,7 @@
 
     <script>
         const tools = [
-            // AI Tools (18) - ADDED 3 MORE
+            // AI Tools (18)
             {name: 'AI Content Writer', icon: 'fa-robot', color: 'purple', category: 'ai', badge: 'HOT', url: 'tools/ai/content-writer.html'},
             {name: 'AI Paraphraser', icon: 'fa-exchange-alt', color: 'purple', category: 'ai', badge: 'POPULAR', url: 'tools/ai/paraphraser.html'},
             {name: 'AI Grammar Checker', icon: 'fa-check-circle', color: 'purple', category: 'ai', url: 'tools/ai/grammar-checker.html'},
@@ -142,7 +172,7 @@
             {name: 'AI Cover Letter Generator', icon: 'fa-briefcase', color: 'purple', category: 'ai', url: 'tools/ai/cover-letter.html'},
             {name: 'AI Article Rewriter', icon: 'fa-sync', color: 'purple', category: 'ai', url: 'tools/ai/article-rewriter.html'},
 
-            // SEO Tools (12) - ADDED 2 MORE
+            // SEO Tools (12)
             {name: 'Keyword Density Checker', icon: 'fa-key', color: 'green', category: 'seo', badge: 'POPULAR', url: 'tools/seo/keyword-density.html'},
             {name: 'Meta Title Generator', icon: 'fa-heading', color: 'green', category: 'seo', url: 'tools/seo/meta-title.html'},
             {name: 'Meta Description Generator', icon: 'fa-align-left', color: 'green', category: 'seo', url: 'tools/seo/meta-description.html'},
@@ -156,19 +186,7 @@
             {name: 'SEO Score Checker', icon: 'fa-check-double', color: 'green', category: 'seo', badge: 'NEW', url: 'tools/seo/seo-score.html'},
             {name: 'Redirect Checker', icon: 'fa-directions', color: 'green', category: 'seo', url: 'tools/seo/redirect-checker.html'},
 
-            // Social Media Tools (12) - ADDED 2 MORE
-            {name: 'Keyword Density Checker', icon: 'fa-key', color: 'green', category: 'seo', badge: 'POPULAR', url: 'tools/seo/keyword-density.html'},
-            {name: 'Meta Title Generator', icon: 'fa-heading', color: 'green', category: 'seo', url: 'tools/seo/meta-title.html'},
-            {name: 'Meta Description Generator', icon: 'fa-align-left', color: 'green', category: 'seo', url: 'tools/seo/meta-description.html'},
-            {name: 'Word Counter', icon: 'fa-font', color: 'green', category: 'seo', url: 'tools/seo/word-counter.html'},
-            {name: 'Plagiarism Checker', icon: 'fa-copy', color: 'green', category: 'seo', badge: 'HOT', url: 'tools/seo/plagiarism-checker.html'},
-            {name: 'Keyword Research Tool', icon: 'fa-search', color: 'green', category: 'seo', url: 'tools/seo/keyword-research.html'},
-            {name: 'Backlink Checker', icon: 'fa-link', color: 'green', category: 'seo', url: 'tools/seo/backlink-checker.html'},
-            {name: 'Domain Authority Checker', icon: 'fa-chart-bar', color: 'green', category: 'seo', url: 'tools/seo/domain-authority.html'},
-            {name: 'XML Sitemap Generator', icon: 'fa-sitemap', color: 'green', category: 'seo', url: 'tools/seo/sitemap-generator.html'},
-            {name: 'Robots.txt Generator', icon: 'fa-robot', color: 'green', category: 'seo', url: 'tools/seo/robots-generator.html'},
-
-            // Social Media Tools (12) - ADDED 2 MORE
+            // Social Media Tools (12)
             {name: 'YouTube Title Generator', icon: 'fa-youtube', color: 'red', category: 'social', badge: 'HOT', fab: true, url: 'tools/social/youtube-title.html'},
             {name: 'YouTube Description Generator', icon: 'fa-youtube', color: 'red', category: 'social', fab: true, url: 'tools/social/youtube-description.html'},
             {name: 'Instagram Caption Generator', icon: 'fa-instagram', color: 'pink', category: 'social', fab: true, url: 'tools/social/instagram-caption.html'},
@@ -182,19 +200,7 @@
             {name: 'YouTube Tag Generator', icon: 'fa-tags', color: 'red', category: 'social', badge: 'NEW', url: 'tools/social/youtube-tags.html'},
             {name: 'Instagram Reel Ideas Generator', icon: 'fa-film', color: 'pink', category: 'social', url: 'tools/social/reel-ideas.html'},
 
-            // Student Tools (12) - ADDED 2 MORE
-            {name: 'YouTube Title Generator', icon: 'fa-youtube', color: 'red', category: 'social', badge: 'HOT', fab: true, url: 'tools/social/youtube-title.html'},
-            {name: 'YouTube Description Generator', icon: 'fa-youtube', color: 'red', category: 'social', fab: true, url: 'tools/social/youtube-description.html'},
-            {name: 'Instagram Caption Generator', icon: 'fa-instagram', color: 'pink', category: 'social', fab: true, url: 'tools/social/instagram-caption.html'},
-            {name: 'YouTube Hashtag Generator', icon: 'fa-hashtag', color: 'blue', category: 'social', url: 'tools/social/youtube-hashtag.html'},
-            {name: 'TikTok Caption Generator', icon: 'fa-tiktok', color: 'pink', category: 'social', fab: true, url: 'tools/social/tiktok-caption.html'},
-            {name: 'Twitter Thread Generator', icon: 'fa-twitter', color: 'blue', category: 'social', fab: true, url: 'tools/social/twitter-thread.html'},
-            {name: 'Facebook Post Generator', icon: 'fa-facebook', color: 'blue', category: 'social', fab: true, url: 'tools/social/facebook-post.html'},
-            {name: 'LinkedIn Post Generator', icon: 'fa-linkedin', color: 'blue', category: 'social', fab: true, url: 'tools/social/linkedin-post.html'},
-            {name: 'Pinterest Description Generator', icon: 'fa-pinterest', color: 'red', category: 'social', fab: true, url: 'tools/social/pinterest-description.html'},
-            {name: 'Social Media Bio Generator', icon: 'fa-user-circle', color: 'purple', category: 'social', url: 'tools/social/bio-generator.html'},
-
-            // Student Tools (12) - ADDED 2 MORE
+            // Student Tools (12)
             {name: 'GPA Calculator', icon: 'fa-calculator', color: 'blue', category: 'student', badge: 'POPULAR', url: 'tools/student/gpa-calculator.html'},
             {name: 'Percentage Calculator', icon: 'fa-percent', color: 'blue', category: 'student', url: 'tools/student/percentage-calculator.html'},
             {name: 'Scientific Calculator', icon: 'fa-square-root-alt', color: 'blue', category: 'student', url: 'tools/student/scientific-calculator.html'},
@@ -208,19 +214,7 @@
             {name: 'Grade Calculator', icon: 'fa-chart-line', color: 'blue', category: 'student', badge: 'NEW', url: 'tools/student/grade-calculator.html'},
             {name: 'Time Zone Converter', icon: 'fa-clock', color: 'blue', category: 'student', url: 'tools/student/timezone-converter.html'},
 
-            // Utility Tools (15) - ADDED 5 MORE
-            {name: 'GPA Calculator', icon: 'fa-calculator', color: 'blue', category: 'student', badge: 'POPULAR', url: 'tools/student/gpa-calculator.html'},
-            {name: 'Percentage Calculator', icon: 'fa-percent', color: 'blue', category: 'student', url: 'tools/student/percentage-calculator.html'},
-            {name: 'Scientific Calculator', icon: 'fa-square-root-alt', color: 'blue', category: 'student', url: 'tools/student/scientific-calculator.html'},
-            {name: 'Age Calculator', icon: 'fa-birthday-cake', color: 'blue', category: 'student', url: 'tools/student/age-calculator.html'},
-            {name: 'BMI Calculator', icon: 'fa-weight', color: 'blue', category: 'student', url: 'tools/student/bmi-calculator.html'},
-            {name: 'Currency Converter', icon: 'fa-exchange-alt', color: 'blue', category: 'student', url: 'tools/student/currency-converter.html'},
-            {name: 'Unit Converter', icon: 'fa-ruler', color: 'blue', category: 'student', url: 'tools/student/unit-converter.html'},
-            {name: 'Random Number Generator', icon: 'fa-random', color: 'blue', category: 'student', url: 'tools/student/random-number.html'},
-            {name: 'Essay Grader', icon: 'fa-award', color: 'blue', category: 'student', url: 'tools/student/essay-grader.html'},
-            {name: 'Citation Generator', icon: 'fa-quote-right', color: 'blue', category: 'student', url: 'tools/student/citation-generator.html'},
-
-            // Utility Tools (10)
+            // Utility Tools (15)
             {name: 'PDF to Word Converter', icon: 'fa-file-pdf', color: 'orange', category: 'utility', badge: 'HOT', url: 'tools/utility/pdf-to-word.html'},
             {name: 'Image Compressor', icon: 'fa-compress', color: 'blue', category: 'utility', url: 'tools/utility/image-compressor.html'},
             {name: 'QR Code Generator', icon: 'fa-qrcode', color: 'indigo', category: 'utility', url: 'tools/utility/qr-generator.html'},
@@ -231,6 +225,11 @@
             {name: 'Color Picker', icon: 'fa-palette', color: 'pink', category: 'utility', url: 'tools/utility/color-picker.html'},
             {name: 'Lorem Ipsum Generator', icon: 'fa-paragraph', color: 'gray', category: 'utility', url: 'tools/utility/lorem-ipsum.html'},
             {name: 'Markdown Editor', icon: 'fa-markdown', color: 'blue', category: 'utility', fab: true, url: 'tools/utility/markdown-editor.html'},
+            {name: 'Case Converter', icon: 'fa-text-height', color: 'teal', category: 'utility', badge: 'NEW', url: 'tools/utility/case-converter.html'},
+            {name: 'Text to Speech', icon: 'fa-volume-up', color: 'green', category: 'utility', badge: 'HOT', url: 'tools/utility/text-to-speech.html'},
+            {name: 'Speech to Text', icon: 'fa-microphone', color: 'red', category: 'utility', url: 'tools/utility/speech-to-text.html'},
+            {name: 'Reverse Text Generator', icon: 'fa-undo', color: 'purple', category: 'utility', url: 'tools/utility/reverse-text.html'},
+            {name: 'Remove Line Breaks', icon: 'fa-align-justify', color: 'blue', category: 'utility', url: 'tools/utility/remove-breaks.html'},
 
             // Earning Tools (8)
             {name: 'AdSense Revenue Calculator', icon: 'fa-ad', color: 'green', category: 'earning', url: 'tools/earning/adsense-calculator.html'},
@@ -242,7 +241,7 @@
             {name: 'Tax Calculator', icon: 'fa-calculator', color: 'blue', category: 'earning', url: 'tools/earning/tax-calculator.html'},
             {name: 'Crypto Profit Calculator', icon: 'fa-bitcoin', color: 'orange', category: 'earning', fab: true, badge: 'HOT', url: 'tools/earning/crypto-calculator.html'},
 
-            // Image & Design Tools (8) - NEW SECTION
+            // Design Tools (8)
             {name: 'Background Remover', icon: 'fa-cut', color: 'purple', category: 'design', badge: 'HOT', url: 'tools/design/background-remover.html'},
             {name: 'Image Resizer', icon: 'fa-expand', color: 'blue', category: 'design', url: 'tools/design/image-resizer.html'},
             {name: 'Thumbnail Maker', icon: 'fa-image', color: 'red', category: 'design', badge: 'POPULAR', url: 'tools/design/thumbnail-maker.html'},
@@ -252,21 +251,14 @@
             {name: 'Favicon Generator', icon: 'fa-icons', color: 'indigo', category: 'design', url: 'tools/design/favicon-generator.html'},
             {name: 'Watermark Tool', icon: 'fa-copyright', color: 'blue', category: 'design', url: 'tools/design/watermark-tool.html'},
 
-            // Website & Dev Tools (7) - NEW SECTION
+            // Web Dev Tools (7)
             {name: 'Website Speed Test', icon: 'fa-tachometer-alt', color: 'red', category: 'webdev', badge: 'HOT', url: 'tools/webdev/speed-test.html'},
             {name: 'HTML Minifier', icon: 'fa-compress-arrows-alt', color: 'orange', category: 'webdev', url: 'tools/webdev/html-minifier.html'},
             {name: 'CSS Minifier', icon: 'fa-file-code', color: 'blue', category: 'webdev', url: 'tools/webdev/css-minifier.html'},
             {name: 'JavaScript Minifier', icon: 'fa-js', color: 'yellow', category: 'webdev', fab: true, url: 'tools/webdev/js-minifier.html'},
             {name: 'Responsive Design Checker', icon: 'fa-mobile-alt', color: 'purple', category: 'webdev', url: 'tools/webdev/responsive-checker.html'},
             {name: 'Meta Tag Generator', icon: 'fa-tags', color: 'green', category: 'webdev', url: 'tools/webdev/meta-tag-generator.html'},
-            {name: 'Open Graph Generator', icon: 'fa-share-alt', color: 'blue', category: 'webdev', url: 'tools/webdev/og-generator.html'},
-
-            // Text & Content Tools (5) - ADDITIONAL
-            {name: 'Case Converter', icon: 'fa-text-height', color: 'teal', category: 'utility', badge: 'NEW', url: 'tools/utility/case-converter.html'},
-            {name: 'Text to Speech', icon: 'fa-volume-up', color: 'green', category: 'utility', badge: 'HOT', url: 'tools/utility/text-to-speech.html'},
-            {name: 'Speech to Text', icon: 'fa-microphone', color: 'red', category: 'utility', url: 'tools/utility/speech-to-text.html'},
-            {name: 'Reverse Text Generator', icon: 'fa-undo', color: 'purple', category: 'utility', url: 'tools/utility/reverse-text.html'},
-            {name: 'Remove Line Breaks', icon: 'fa-align-justify', color: 'blue', category: 'utility', url: 'tools/utility/remove-breaks.html'}
+            {name: 'Open Graph Generator', icon: 'fa-share-alt', color: 'blue', category: 'webdev', url: 'tools/webdev/og-generator.html'}
         ];
 
         function renderTools() {
@@ -275,61 +267,4 @@
                 <div class="tool-card bg-white rounded-lg shadow hover:shadow-xl transition p-4 border" data-category="${tool.category}">
                     <div class="flex items-start justify-between mb-3">
                         <h3 class="text-base font-bold text-gray-800 flex-1">
-                            <i class="${tool.fab ? 'fab' : 'fas'} ${tool.icon} text-${tool.color}-600 mr-2"></i>${tool.name}
-                        </h3>
-                        ${tool.badge ? `<span class="bg-${tool.badge === 'HOT' ? 'red' : 'yellow'}-${tool.badge === 'HOT' ? '500' : '400'} text-${tool.badge === 'HOT' ? 'white' : 'yellow-900'} text-xs font-bold px-2 py-1 rounded">${tool.badge}</span>` : ''}
-                    </div>
-                    <a href="${tool.url}" class="block bg-${tool.color}-600 text-white px-4 py-2 rounded-lg hover:bg-${tool.color}-700 transition text-center text-sm">
-                        <i class="fas fa-arrow-right mr-1"></i>Use Tool
-                    </a>
-                </div>
-            `).join('');
-        }
-
-        function filterTools(category) {
-            const cards = document.querySelectorAll('.tool-card');
-            const buttons = document.querySelectorAll('.category-btn');
-            
-            buttons.forEach(btn => {
-                btn.classList.remove('active', 'bg-gradient-to-r', 'from-blue-600', 'to-purple-600', 'text-white');
-                btn.classList.add('bg-gray-100', 'text-gray-700');
-            });
-            
-            event.target.classList.add('active', 'bg-gradient-to-r', 'from-blue-600', 'to-purple-600', 'text-white');
-            event.target.classList.remove('bg-gray-100', 'text-gray-700');
-            
-            cards.forEach(card => {
-                card.style.display = (category === 'all' || card.dataset.category === category) ? 'block' : 'none';
-            });
-        }
-
-        document.getElementById('searchTools').addEventListener('input', function(e) {
-            const search = e.target.value.toLowerCase();
-            document.querySelectorAll('.tool-card').forEach(card => {
-                const text = card.textContent.toLowerCase();
-                card.style.display = text.includes(search) ? 'block' : 'none';
-            });
-        });
-
-        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
-
-        renderTools();
-    </script>
-
-    <style>
-        .category-btn.active {
-            background: linear-gradient(to right, #2563eb, #9333ea);
-            color: white;
-        }
-        .category-btn:not(.active) {
-            background-color: #f3f4f6;
-            color: #374151;
-        }
-        .category-btn:not(.active):hover {
-            background-color: #e5e7eb;
-        }
-    </style>
-</body>
-</html>
+                            <i class="${tool.fab ? '
